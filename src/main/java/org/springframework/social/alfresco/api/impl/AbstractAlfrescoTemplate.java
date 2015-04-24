@@ -1741,20 +1741,21 @@ public abstract class AbstractAlfrescoTemplate implements Alfresco
 		 "     <url>/components/navigation/collaboration-navigation</url>"+
 		 "   </component>"+
 		 " </document>"+
-		 " <document path=\"/alfresco/site-data/components/page.full-width-dashlet.site~" + "<shortName>" + "~dashboard.xml\">"+
-		 "   <component>"+
-		 "     <guid>page.full-width-dashlet.site~" + "<shortName>" + "~dashboard</guid>"+
-		 "     <scope>page</scope>"+
-		 "     <region-id>full-width-dashlet</region-id>"+
-		 "     <source-id>site/" + "<shortName>" + "/dashboard</source-id>"+
-		 "     <url>/components/dashlets/dynamic-welcome</url>"+
-		 "     <properties>"+
-		 "       <dashboardType>site</dashboardType>"+
-		 "     </properties> "+
-		 "   </component>"+
-		 " </document>"+
+// REMOVED home welcome dashlet		 
+//		 " <document path=\"/alfresco/site-data/components/page.full-width-dashlet.site~" + "<shortName>" + "~dashboard.xml\">"+
+//		 "   <component>"+
+//		 "     <guid>page.full-width-dashlet.site~" + "<shortName>" + "~dashboard</guid>"+
+//		 "     <scope>page</scope>"+
+//		 "     <region-id>full-width-dashlet</region-id>"+
+//		 "     <source-id>site/" + "<shortName>" + "/dashboard</source-id>"+
+//		 "     <url>/components/dashlets/dynamic-welcome</url>"+
+//		 "     <properties>"+
+//		 "       <dashboardType>site</dashboardType>"+
+//		 "     </properties> "+
+//		 "   </component>"+
+//		 " </document>"+
 		 " <document path=\"/alfresco/site-data/components/page.component-1-1.site~" + "<shortName>" + "~dashboard.xml\">"+
-"		    <component>"+
+	"	    <component>"+
 	"	      <guid>page.component-1-1.site~" + "<shortName>" + "~dashboard</guid>"+
 	"	      <scope>page</scope>"+
 	"	      <region-id>component-1-1</region-id>"+
@@ -1765,6 +1766,31 @@ public abstract class AbstractAlfrescoTemplate implements Alfresco
 	"	      </properties>"+
 	"	    </component>"+
 	"	  </document>"+
+	
+	//START- most active   
+	"         <document path=\"/alfresco/site-data/components/page.component-1-3.site~" + "<shortName>" + "~dashboard.xml\">"+
+	"          <component>"+
+	"            <guid>page.component-1-3.site~" + "<shortName>" + "~dashboard</guid>"+
+	"            <scope>page</scope>"+
+        "             <region-id>component-1-3</region-id>"+
+        "             <source-id>user/${userid}/dashboard</source-id>"+
+        "             <url>/pentaho/components/dashlets/most-active-users-report</url>"+
+        "          </component>"+
+	"         </document>"+
+	//END- most active
+	
+       //START- my-activities   
+       "         <document path=\"/alfresco/site-data/components/page.component-2-3.site~" + "<shortName>" + "~dashboard.xml\">"+
+       "          <component>"+
+       "            <guid>page.component-2-3.site~" + "<shortName>" + "~dashboard</guid>"+
+       "            <scope>page</scope>"+
+       "             <region-id>component-1-3</region-id>"+
+       "             <source-id>user/${userid}/dashboard</source-id>"+
+       "             <url>/pentaho/components/dashlets/my-activities-report</url>"+
+       "          </component>"+
+       "         </document>"+
+       //END- my-activities
+       
 	"	  <document path=\"/alfresco/site-data/components/page.component-2-1.site~" + "<shortName>" + "~dashboard.xml\">"+
 	"	    <component>"+
 	"	      <guid>page.component-2-1.site~" + "<shortName>" + "~dashboard</guid>"+
