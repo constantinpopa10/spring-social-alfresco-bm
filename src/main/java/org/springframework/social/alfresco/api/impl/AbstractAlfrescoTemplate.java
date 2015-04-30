@@ -1791,6 +1791,30 @@ public abstract class AbstractAlfrescoTemplate implements Alfresco
        "         </document>"+
        //END- my-activities
        
+        //START- site-user-activity-report  
+        "         <document path=\"/alfresco/site-data/components/page.component-1-2.site~" + "<shortName>" + "~dashboard.xml\">"+
+        "          <component>"+
+        "            <guid>page.component-1-2.site~" + "<shortName>" + "~dashboard</guid>"+
+        "            <scope>page</scope>"+
+        "             <region-id>component-1-2</region-id>"+
+        "             <source-id>site/${userid}/dashboard</source-id>"+
+        "             <url>/pentaho/components/dashlets/site-user-activity-report</url>"+
+        "          </component>"+
+        "         </document>"+
+        //END- site-user-activity-report
+        
+        //START- site-hot-content-report
+        "         <document path=\"/alfresco/site-data/components/page.component-2-3.site~" + "<shortName>" + "~dashboard.xml\">"+
+        "          <component>"+
+        "            <guid>page.component-2-3.site~" + "<shortName>" + "~dashboard</guid>"+
+        "            <scope>page</scope>"+
+        "             <region-id>component-2-3</region-id>"+
+        "             <source-id>site/${userid}/dashboard</source-id>"+
+        "             <url>/pentaho/components/dashlets/site-hot-content-report</url>"+
+        "          </component>"+
+        "         </document>"+
+        //END- site-hot-content-report
+       
 	"	  <document path=\"/alfresco/site-data/components/page.component-2-1.site~" + "<shortName>" + "~dashboard.xml\">"+
 	"	    <component>"+
 	"	      <guid>page.component-2-1.site~" + "<shortName>" + "~dashboard</guid>"+
