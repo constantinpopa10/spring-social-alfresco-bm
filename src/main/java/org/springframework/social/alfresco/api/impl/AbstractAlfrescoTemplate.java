@@ -1791,6 +1791,31 @@ public abstract class AbstractAlfrescoTemplate implements Alfresco
        "         </document>"+
        //END- my-activities
        
+     //START- assignee-report 
+     "         <document path=\"/alfresco/site-data/components/page.component-3-1.site~" + "<shortName>" + "~dashboard.xml\">"+
+     "          <component>"+
+     "            <guid>page.component-3-1.site~" + "<shortName>" + "~dashboard</guid>"+
+     "            <scope>page</scope>"+
+     "             <region-id>component-3-1</region-id>"+
+     "             <source-id>user/${userid}/dashboard</source-id>"+
+     "             <url>/pentaho/components/dashlets/assignee-report</url>"+
+     "          </component>"+
+     "         </document>"+
+     //END- assignee-report
+     
+     //START- process-duration-trend-report 
+     "         <document path=\"/alfresco/site-data/components/page.component-3-2.site~" + "<shortName>" + "~dashboard.xml\">"+
+     "          <component>"+
+     "            <guid>page.component-3-2.site~" + "<shortName>" + "~dashboard</guid>"+
+     "            <scope>page</scope>"+
+     "             <region-id>component-3-2</region-id>"+
+     "             <source-id>user/${userid}/dashboard</source-id>"+
+     "             <url>/pentaho/components/dashlets/process-duration-trend-report</url>"+
+     "          </component>"+
+     "         </document>"+
+     //END- process-duration-trend-report
+     
+       
         //START- site-user-activity-report  
         "         <document path=\"/alfresco/site-data/components/page.component-1-2.site~" + "<shortName>" + "~dashboard.xml\">"+
         "          <component>"+
