@@ -1835,7 +1835,7 @@ public abstract class AbstractAlfrescoTemplate implements Alfresco
         "            <scope>page</scope>"+
         "             <region-id>component-2-3</region-id>"+
         "             <source-id>site/${userid}/dashboard</source-id>"+
-        "             <url>/pentaho/components/dashlets/site-hot-content-report</url>"+
+        "             <url>/pentaho/components/dashlets/site-hot-content-report-cda</url>"+
         "          </component>"+
         "         </document>"+
         //END- site-hot-content-report
